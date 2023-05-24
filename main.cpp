@@ -11,7 +11,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	Enemy* enemy = new Enemy;
 
-	enemy->Init();
+	
 
 	// キー入力結果を受け取る箱
 	char keys[256] = {0};
@@ -29,7 +29,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓更新処理ここから
 		///
-		enemy->Update();
+		enemy->Damage(1);
 		///
 		/// ↑更新処理ここまで
 		///
@@ -37,7 +37,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓描画処理ここから
 		///
-		enemy->Draw();
+		
 		///
 		/// ↑描画処理ここまで
 		///

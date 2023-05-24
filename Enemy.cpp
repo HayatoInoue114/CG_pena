@@ -1,5 +1,9 @@
 #include "Enemy.h"
 
+
+
+
+
 void Enemy::Init() {
 	position_ = {100,100};
 	velocity_ = {3,3};

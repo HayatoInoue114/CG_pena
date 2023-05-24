@@ -5,6 +5,7 @@
 class Enemy
 {
 public:
+
 	void Init();
 
 	void Update();
@@ -15,6 +16,7 @@ private:
 	Vector2 position_;
 	Vector2 velocity_;
 	int size_;
+	
 
 };
 
