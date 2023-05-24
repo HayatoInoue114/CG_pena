@@ -17,6 +17,12 @@
     <Filter Include="KamataEngine\Enemy">
       <UniqueIdentifier>{0f09e22e-5bb5-482d-9549-f313d083229f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="KamataEngine\Transform">
+      <UniqueIdentifier>{8a3ed03c-6831-491d-b22b-96477d0ee0fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KamataEngine\Player">
+      <UniqueIdentifier>{387940a5-3fcf-40c3-9bd5-6dcec69928fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
@@ -40,6 +46,9 @@
     </ClCompile>
     <ClCompile Include="Enemy.cpp">
       <Filter>KamataEngine\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>KamataEngine\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +123,12 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="Enemy.h">
       <Filter>KamataEngine\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>KamataEngine\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>KamataEngine\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

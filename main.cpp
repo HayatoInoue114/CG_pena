@@ -1,4 +1,5 @@
 #include "Enemy.h"
+#include "Player.h"
 
 const char kWindowTitle[] = "学籍番号";
 
@@ -9,10 +10,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	Novice::Initialize(kWindowTitle, 1280, 720);
 
 
-	Enemy* enemy = new Enemy;
-
 	
-
+	Player* player = new Player;
+	
+	player->Init();
 	// キー入力結果を受け取る箱
 	char keys[256] = {0};
 	char preKeys[256] = {0};
@@ -29,7 +30,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓更新処理ここから
 		///
-		enemy->Damage(1);
+		player->Move();
 		///
 		/// ↑更新処理ここまで
 		///
@@ -37,7 +38,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓描画処理ここから
 		///
-		
+		player->Draw();
 		///
 		/// ↑描画処理ここまで
 		///
