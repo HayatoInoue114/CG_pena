@@ -1,6 +1,8 @@
 #pragma once
 #include<Novice.h>
 #include"Transform.h"
+#include"Bullet.h"
+
 class Player
 {
 public:
@@ -11,5 +13,7 @@ public:
 private:
 	Transform transform_;
 	int speed_;
+
+	Bullet* bullet = new Bullet;
 };
 

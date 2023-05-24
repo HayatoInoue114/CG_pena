@@ -23,6 +23,9 @@
     <Filter Include="KamataEngine\Player">
       <UniqueIdentifier>{387940a5-3fcf-40c3-9bd5-6dcec69928fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="KamataEngine\Bullet">
+      <UniqueIdentifier>{1119d7f9-bc40-4704-9770-e74dd63abba6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
@@ -49,6 +52,9 @@
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>KamataEngine\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>KamataEngine\Bullet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +135,9 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>KamataEngine\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>KamataEngine\Bullet</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

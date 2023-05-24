@@ -4,6 +4,7 @@ void Player::Init() {
 	transform_.position = { 100,100 };
 	transform_.radius = 50;
 	speed_ = 10;
+	bullet->Init();
 }
 
 void Player::Move() {
@@ -19,8 +20,11 @@ void Player::Move() {
 	if (Novice::CheckHitKey(DIK_RIGHT)) {
 		transform_.position.x += speed_;
 	}
+
+	bullet->Update(transform_.position);
 }
 
 void Player::Draw() {
+	bullet->Draw();
 	Novice::DrawEllipse((int)transform_.position.x, (int)transform_.position.y, (int)transform_.radius, (int)transform_.radius, 0.0f, WHITE, kFillModeSolid);
 }
