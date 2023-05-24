@@ -11,9 +11,11 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 
 	
-	Player* player = new Player;
+	/*Player* player = new Player;*/
+
+	Enemy* enmy = new Enemy;
 	
-	player->Init();
+	/*player->Init();*/
 	// キー入力結果を受け取る箱
 	char keys[256] = {0};
 	char preKeys[256] = {0};
@@ -30,7 +32,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓更新処理ここから
 		///
-		player->Move();
+		/*player->Move();*/
+
+		enmy->Update();
 		///
 		/// ↑更新処理ここまで
 		///
@@ -38,7 +42,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓描画処理ここから
 		///
-		player->Draw();
+		/*player->Draw();*/
+		enmy->Draw();
 		///
 		/// ↑描画処理ここまで
 		///

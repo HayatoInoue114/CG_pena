@@ -1,21 +1,20 @@
 #pragma once
 #include <Vector2.h>
 #include <Novice.h>
+#include "Object.h"
 
-class Enemy
+class Enemy : public Object
 {
 public:
 
-	void Init();
+	
+	Enemy();
 
 	void Update();
 
 	void Draw();
 
 private:
-	Vector2 position_;
-	Vector2 velocity_;
-	int size_;
 	
 
 };
